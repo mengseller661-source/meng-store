@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENG STORE</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+.header{
+    background:#0088cc;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+.card{
+    background:#fff;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+}
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#0088cc;
+    color:#fff;
+    font-size:18px;
+}
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+MENG STORE
+</div>
+
+<div class="card">
+<h2>Telegram Premium</h2>
+
+<input type="text" placeholder="Telegram Username">
+
+<br><br>
+
+<button onclick="buy()">
+ទិញ Premium
+</button>
+
+</div>
+
+<script>
+
+let tg = window.Telegram.WebApp;
+tg.expand();
+
+function buy(){
+    alert("សូមអរគុណ សម្រាប់ការបញ្ជាទិញ!");
+}
+
+</script>
+
+</body>
+</html>
