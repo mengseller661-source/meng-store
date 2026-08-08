@@ -1,0 +1,25 @@
+<script>
+function buy(plan, price){
+
+  const username =
+    document.getElementById("username").value.trim();
+
+  if(!username){
+    alert("សូមបញ្ចូល Telegram Username ជាមុនសិន!");
+    document.getElementById("username").focus();
+    return;
+  }
+
+  const message =
+    "🛒 NEW ORDER - MENG STORE\n\n" +
+    "👤 Username: " + username + "\n" +
+    "📦 Package: " + plan + "\n" +
+    "💵 Price: " + price;
+
+  const telegram =
+    "https://t.me/MENG168OFFICIAL?text=" +
+    encodeURIComponent(message);
+
+  window.location.href = telegram;
+}
+</script>
